@@ -1,4 +1,4 @@
-<div align="center">
+ <div align="center">
 
 # 🔐 obfuscator
 
@@ -22,11 +22,35 @@
 
 ---
 
-## 🧩 What Is This?
+## 🚀 The Next Version Is Coming Soon
+
+<div align="center">
+
+### A New Level of Python Obfuscation
+
+**Version 2.0 is in development.**
+
+The next release is being planned with a focus on stronger obfuscation, more sophisticated code transformations, and improvements to the overall processing pipeline.
+
+</div>
+
+The goal is to take the current obfuscation workflow further while continuing to refine the developer experience.
+
+- 🔒 **Improved Obfuscation** — planned enhancements to make transformed source code harder to inspect.
+- 🧬 **Advanced Transformations** — further development of the code transformation pipeline.
+- ⚙️ **Pipeline Improvements** — continued refinement of the generation and processing workflow.
+
+<sub>These are development goals, not features available in the current release. Details may change as development progresses.</sub>
+
+**Stay tuned for the next release.** ⚡
+
+---
+
+## 🧩 What Is obfuscator?
 
 **obfuscator** is a Python utility designed to make source code harder to inspect by transforming selected parts of a program and generating a layered output file.
 
-Instead of simply renaming variables or removing whitespace, it combines several techniques, including abstract syntax tree (AST) transformations, encoded constants, compiled bytecode serialization, compression, and generated loader stages.
+Rather than relying only on variable renaming or whitespace removal, it combines multiple techniques, including abstract syntax tree (AST) transformations, encoded constants, compiled bytecode serialization, compression, and generated loader stages.
 
 The application is built around a terminal interface powered by [Rich](https://github.com/Textualize/rich), providing a live processing dashboard with progress indicators, execution logs, stage timings, and output metrics.
 
@@ -57,7 +81,7 @@ The application organizes processing into eight stages.
               └────────────┬─────────────┘
                            ▼
               ┌──────────────────────────┐
-              │    02. Encrypt Constants │
+              │ 02. Encrypt Constants    │
               └────────────┬─────────────┘
                            ▼
               ┌──────────────────────────┐
@@ -69,7 +93,7 @@ The application organizes processing into eight stages.
               └────────────┬─────────────┘
                            ▼
               ┌──────────────────────────┐
-              │    05. Build Bootstrap   │
+              │   05. Build Bootstrap    │
               └────────────┬─────────────┘
                            ▼
               ┌──────────────────────────┐
@@ -81,7 +105,7 @@ The application organizes processing into eight stages.
               └────────────┬─────────────┘
                            ▼
               ┌──────────────────────────┐
-              │    08. Write Output      │
+              │     08. Write Output     │
               └──────────────────────────┘
 ```
 
@@ -89,7 +113,7 @@ Each stage contributes to the final output. The terminal dashboard tracks progre
 
 ## 🖥️ Terminal Dashboard
 
-The application uses Rich to present an interactive, live-updating terminal display rather than a sequence of plain print statements.
+The application uses Rich to present a live-updating terminal dashboard instead of a sequence of plain print statements.
 
 The interface includes:
 
@@ -110,7 +134,7 @@ The dashboard also supports cancellation using `Ctrl+C`.
 - `pip` for installing Python packages
 - An existing Python source file to process
 
-The terminal interface uses the Rich library. The script attempts to install or upgrade Rich automatically if the import is unavailable, so an internet connection and permission to install packages may be needed on first launch.
+The terminal interface uses the Rich library. If the import is unavailable, the script attempts to install or upgrade Rich automatically, so an internet connection and permission to install packages may be required on first launch.
 
 ### 1. Clone the Repository
 
@@ -151,7 +175,7 @@ example_obf.py
 
 The generated file contains the transformed program and its generated loading code.
 
-Always keep an untouched copy of your original source before processing it.
+> 💡 Always keep an untouched copy of your original source before processing it.
 
 ## 🧪 VirusTotal Scan Results
 
@@ -161,11 +185,11 @@ Always keep an untouched copy of your original source before processing it.
 
 **Observed result during testing**
 
-The generated Python file returned **0 detections on VirusTotal** in the scan performed during testing.
-
 </div>
 
-This result records the outcome of that particular scan. Detection results can differ between files, security engines, and scan dates. A zero-detection result does not establish that a file is safe or guarantee future detection results.
+The generated Python file returned **0 detections on VirusTotal** in the scan performed during testing.
+
+This result describes only that particular scan. Detection results may differ across files, security engines, and scan dates. A zero-detection result does not prove that a file is safe, establish that it is undetectable, or guarantee future scan results.
 
 ## 🔬 Technical Details
 
@@ -195,7 +219,6 @@ Test generated output thoroughly before using it in a production workflow.
 
 ```text
 obfuscator/
-│
 └── obfuscator.py
 ```
 
@@ -238,6 +261,6 @@ The main application, processing pipeline, and terminal interface are contained 
 
 **Hidden-Rhythm**
 
-<sub>obfuscator · v1.0.0</sub>
+<sub>obfuscator · v1.0.0 · Next version in development</sub>
 
 </div>
