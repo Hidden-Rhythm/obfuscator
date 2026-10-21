@@ -52,37 +52,37 @@ The application is built around a terminal interface powered by [Rich](https://g
 The application organizes processing into eight stages.
 
 ```text
-              ┌─────────────────────────┐
-              │    📂 01. Read Source   │
-              └────────────┬────────────┘
+              ┌──────────────────────────┐
+              │     01. Read Source      │
+              └────────────┬─────────────┘
                            ▼
-              ┌─────────────────────────┐
-              │  🔐 02. Encrypt Constants│
-              └────────────┬────────────┘
+              ┌──────────────────────────┐
+              │    02. Encrypt Constants │
+              └────────────┬─────────────┘
                            ▼
-              ┌─────────────────────────┐
-              │   📦 03. Build Payload  │
-              └────────────┬────────────┘
+              ┌──────────────────────────┐
+              │    03. Build Payload     │
+              └────────────┬─────────────┘
                            ▼
-              ┌─────────────────────────┐
-              │   🧬 04. Build Stage 2   │
-              └────────────┬────────────┘
+              ┌──────────────────────────┐
+              │    04. Build Stage 2     │
+              └────────────┬─────────────┘
                            ▼
-              ┌─────────────────────────┐
-              │  🏗️ 05. Build Bootstrap │
-              └────────────┬────────────┘
+              ┌──────────────────────────┐
+              │    05. Build Bootstrap   │
+              └────────────┬─────────────┘
                            ▼
-              ┌─────────────────────────┐
-              │   🎲 06. Emit Surface   │
-              └────────────┬────────────┘
+              ┌──────────────────────────┐
+              │    06. Emit Surface      │
+              └────────────┬─────────────┘
                            ▼
-              ┌─────────────────────────┐
-              │   ✅ 07. Verify Syntax  │
-              └────────────┬────────────┘
+              ┌──────────────────────────┐
+              │    07. Verify Syntax     │
+              └────────────┬─────────────┘
                            ▼
-              ┌─────────────────────────┐
-              │   💾 08. Write Output   │
-              └─────────────────────────┘
+              ┌──────────────────────────┐
+              │    08. Write Output      │
+              └──────────────────────────┘
 ```
 
 Each stage contributes to the final output. The terminal dashboard tracks progress and displays relevant metrics throughout the process.
@@ -234,7 +234,7 @@ The main application, processing pipeline, and terminal interface are contained 
 
 <div align="center">
 
-### ⚡ Built with Python. Designed for the terminal.
+### ⚡ Built with Python.
 
 **Hidden-Rhythm**
 
